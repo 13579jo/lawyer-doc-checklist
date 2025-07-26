@@ -40,6 +40,23 @@
       font-style: italic;
       color: #555;
     }
+    .section {
+      padding: 10px 15px;
+      border-radius: 5px;
+      margin: 20px 0;
+    }
+    .post-office {
+      background-color: #e0f7fa;
+      border-left: 4px solid #00acc1;
+    }
+    .jcic-address {
+      background-color: #f3e5f5;
+      border-left: 4px solid #9c27b0;
+    }
+    .documents {
+      background-color: #fff3e0;
+      border-left: 4px solid #fb8c00;
+    }
     @media (max-width: 600px) {
       body {
         font-size: 16px;
@@ -58,55 +75,43 @@
 
   <h1>更生申請律師資料清單</h1>
 
-  <h2>一、個人基本資料</h2>
-  <ul>
-    <li>身分證正反面影本</li>
-    <li>戶口名簿影本</li>
-    <li>全戶戶籍謄本（近三個月內）</li>
-  </ul>
-
   <h2>二、債務證明</h2>
-  <ul>
-    <li><strong>金融聯合徵信中心「債權人清冊」與「個人信用報告」</strong><br>
-      可查出你欠哪幾家銀行、有無逾期紀錄與債權人名稱。請準備以下資料至郵局辦理：
-      <ul>
-        <li>攜帶身分證正本＋第二證件（健保卡、駕照等）</li>
-        <li>前往「郵局儲匯窗口」告知要申請聯徵中心信用報告</li>
-        <li>填寫申請書，郵局會代送至聯徵中心</li>
-        <li>約 5～7 天收到紙本資料</li>
-      </ul>
-      📍 地址：台北市大安區羅斯福路三段143號6樓<br>
-      電話：(02) 2316-3232
-    </li>
-    <li>各家銀行帳單、催收通知、繳款單</li>
-    <li>法院判決書、存證信函、強制執行文件（如有）</li>
-  </ul>
 
-  <h2>三、收入與財產證明</h2>
-  <ul>
-    <li>最近六個月的薪資單或其他收入證明</li>
-    <li>勞保／國稅局所得資料</li>
-    <li><strong>銀行存摺明細（近一年）</strong><br>
-      請親自到你「目前使用的銀行」櫃檯辦理，告知要列印「近一年內的交易明細」，行員會協助並蓋章。
-    </li>
-    <li>財產資料（房產、土地、車輛、投資等）</li>
-  </ul>
+  <div class="section post-office">
+    <h3>🔹 申請方式一：前往郵局儲匯窗口辦理</h3>
+    <ul>
+      <li>攜帶 <strong>身分證正本</strong> 及 <strong>第二證件</strong>（如健保卡、駕照）</li>
+      <li>告知窗口：<strong>我要申請金融聯合徵信中心的「信用報告」與「債權人清冊」，是要辦理更生用的</strong></li>
+      <li>現場填寫申請表格，郵局會代收轉送</li>
+      <li>約 5～7 天寄送到你填寫的地址</li>
+    </ul>
+  </div>
 
-  <h2>四、家庭支出與生活負擔</h2>
-  <ul>
-    <li>每月生活費支出明細（手寫或 Excel 皆可）</li>
-    <li><strong>房屋租賃契約影本</strong>（若無契約，請備註房東姓名、聯絡方式）</li>
-    <li>撫養小孩或老人證明（如在學證明、身障證明）</li>
-    <li><strong>離婚者</strong>：請附「離婚協議書或法院判決書」，並說明是否有撫養費或扶養支出</li>
-  </ul>
+  <div class="section jcic-address">
+    <h3>🔹 申請方式二：親自前往金融聯合徵信中心辦理</h3>
+    <ul>
+      <li><strong>機構名稱：</strong> 財團法人金融聯合徵信中心（JCIC）</li>
+      <li><strong>地址：</strong> 台北市大安區羅斯福路三段 143 號 6 樓</li>
+      <li><strong>電話：</strong> (02) 2316-3232</li>
+      <li><strong>備註：</strong> 親洽時同樣需攜帶身分證與第二證件正本</li>
+    </ul>
+  </div>
 
-  <h2>五、特殊情況佐證（如有）</h2>
-  <ul>
-    <li><strong>重大傷病或就醫證明</strong>（慢性病、住院、重大傷病卡）</li>
-    <li><strong>失業證明</strong>（勞保退保紀錄、離職證明或就業中心資料）</li>
-  </ul>
+  <div class="section documents">
+    <h3>🔹 可提供的其他文件（有的話請交給律師，沒有也沒關係）</h3>
+    <ul>
+      <li>各家銀行帳單</li>
+      <li>催收通知（例如簡訊、信件）</li>
+      <li>繳款單或協商文件</li>
+      <li>法院判決書（如有被起訴）</li>
+      <li>存證信函（如收到律師函）</li>
+      <li>強制執行通知書（如已遭扣薪、查封）</li>
+    </ul>
+    <p>✅ 若這些文件沒有也不用擔心，只要如實告訴律師即可。</p>
+  </div>
 
-  <p class="note">📌 建議使用資料夾將上述五大類分開整理，貼上分類標籤，方便律師快速了解案件全貌。</p>
+  <p class="note">📌 提醒：以上三部分資料越完整越能幫助律師了解債務狀況並幫你擬定更生計畫。</p>
 
 </body>
 </html>
+
