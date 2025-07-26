@@ -45,10 +45,9 @@
       font-weight: bold;
       color: #512da8;
     }
-    .contact-info {
-      font-style: italic;
-      color: #555;
-      font-size: 0.95em;
+    a {
+      color: #0077cc;
+      text-decoration: none;
     }
     @media (max-width: 600px) {
       body {
@@ -66,12 +65,36 @@
 </head>
 <body>
 
-<h1>要給律師的資料（補充項目）</h1>
+<h1>要給律師的資料（完整七大項目）</h1>
+
+<div class="section" id="section-1">
+  <h2 data-number="一、">個人基本資料</h2>
+  <ul>
+    <li>身分證影本</li>
+    <li>戶口名簿影本（含全戶）</li>
+    <li>若已婚、離婚、監護權等請附相關證明（如戶政登記或判決書）</li>
+    <li>若有重大疾病或身心障礙，建議一併附上醫療證明或手冊影本</li>
+  </ul>
+</div>
+
+<div class="section" id="section-2">
+  <h2 data-number="二、">債務相關資料</h2>
+  <ul>
+    <li>至「聯合徵信中心」申請信用報告與債權人清冊（辦理更生使用）</li>
+    <li><strong>地址：</strong> 台北市中正區羅斯福路一段126號2樓</li>
+    <li><strong>電話：</strong> (02) 2316-3232</li>
+    <li><strong>網站：</strong> <a href="https://www.jcic.org.tw" target="_blank">https://www.jcic.org.tw</a></li>
+    <li><strong>方式一：</strong> 前往郵局臨櫃，告知申請信用報告與債權人清冊（辦理更生使用），現場簽名後約10分鐘即可領取</li>
+    <li><strong>方式二：</strong> 親自到聯徵中心辦理，攜帶身分證、印章，當場可領取報告</li>
+    <li>📌 可額外附上各家銀行帳單、繳款單、催收通知、法院判決、存證信函等。如無，告知律師即可</li>
+  </ul>
+</div>
 
 <div class="section" id="section-3">
   <h2 data-number="三、">勞保紀錄查詢</h2>
   <ul>
-    <li>至勞保局申請可查詢是否有保。</li>
+    <li>查詢是否有勞保與健保紀錄、就業紀錄等資料</li>
+    <li>親自前往勞保局臨櫃申請，攜帶身分證</li>
     <li><strong>地址：</strong> 台北市中正區忠孝東路一段76號</li>
     <li><strong>電話：</strong> (02) 2396-1266</li>
     <li><strong>網站：</strong> <a href="https://www.bli.gov.tw" target="_blank">https://www.bli.gov.tw</a></li>
@@ -81,43 +104,44 @@
 <div class="section" id="section-4">
   <h2 data-number="四、">財產與投資明細</h2>
   <ul>
-    <li>包含名下資產如：不動產、車輛、股票、基金、虛擬幣等。</li>
-    <li>請列出所有資產清單。</li>
-    <li>銀行與郵局帳戶：請申請近一年內明細。</li>
-    <li>準備兩份：一份自留，一份交給律師。</li>
-    <li>請用筆註明大筆款項來源與用途（例如：30000 元來自親友支援用於醫療費）。</li>
-    <li>律師會詢問：每月收入與每月花費細項，請事先準備清單。</li>
+    <li>資產類別：房產、汽車、股票、基金、虛擬幣等</li>
+    <li>帳戶明細（近一年內）請至使用中的銀行或郵局申請</li>
+    <li>建議影印兩份，一份自留、一份交給律師</li>
+    <li>用筆註明大筆金額來源與用途（如30000元為醫療、贈與等）</li>
+    <li>律師需了解你的收入與每月花費，建議事先列好收支表</li>
   </ul>
 </div>
 
 <div class="section" id="section-5">
   <h2 data-number="五、">保單明細</h2>
   <ul>
-    <li>若有保單，請申請明細，確認是否有價值增值。</li>
-    <li>可透過下列保險公會查詢：</li>
+    <li>若有壽險或產險保單，請確認是否有現金價值</li>
+    <li>查詢方式：</li>
     <ul>
       <li><strong>壽險公會：</strong> <a href="https://www.lia-roc.org.tw" target="_blank">https://www.lia-roc.org.tw</a></li>
       <li><strong>產險公會：</strong> <a href="https://www.tii.org.tw" target="_blank">https://www.tii.org.tw</a></li>
-      <li>或直接向保險公司客服申請保單價值資料。</li>
     </ul>
+    <li>也可向保險公司申請完整保單內容與價值證明</li>
   </ul>
 </div>
 
 <div class="section" id="section-6">
   <h2 data-number="六、">工作狀況說明</h2>
   <ul>
-    <li>若有工作：請說明目前工作內容與收入。</li>
-    <li>若沒有工作：請說明原因（如身體不適），可提供醫院證明。</li>
+    <li>若有工作：說明目前職業、公司、薪資、是否穩定</li>
+    <li>若無工作：請說明原因（如生病、育兒、無法久站等）</li>
+    <li>可附上就醫證明（如有）來說明為何不能工作</li>
   </ul>
 </div>
 
 <div class="section" id="section-7">
   <h2 data-number="七、">子女扶養費處理</h2>
   <ul>
-    <li>若有離婚情形，需說明是否收到前夫的扶養費。</li>
-    <li>若有證明（如匯款單），請附上；若無，請與律師討論處理方式。</li>
+    <li>若有離婚，需說明是否有撫養義務或是否收到扶養費</li>
+    <li>若有匯款紀錄可影印附上；如無，也可與律師說明由律師協助處理</li>
   </ul>
 </div>
 
 </body>
 </html>
+
