@@ -35,40 +35,20 @@
     li {
       margin-bottom: 8px;
     }
-    .note {
-      margin-top: 30px;
-      font-style: italic;
-      color: #555;
-    }
     .section {
       padding: 15px;
       border-radius: 5px;
       margin: 25px 0;
     }
-    .post-office {
-      background-color: #e0f7fa;
-      border-left: 4px solid #00acc1;
+    .section h2::before {
+      content: attr(data-number) " ";
+      font-weight: bold;
+      color: #512da8;
     }
-    .jcic-address {
-      background-color: #f3e5f5;
-      border-left: 4px solid #9c27b0;
-    }
-    .documents {
-      background-color: #fff3e0;
-      border-left: 4px solid #fb8c00;
-    }
-    .dialog-box {
-      background-color: #f0f0f0;
-      border-left: 4px solid #999;
-      padding: 10px 15px;
-      margin-top: 10px;
-      border-radius: 4px;
-    }
-    .dialog-box p {
-      margin: 8px 0;
-    }
-    .dialog-box strong {
-      color: #000;
+    .contact-info {
+      font-style: italic;
+      color: #555;
+      font-size: 0.95em;
     }
     @media (max-width: 600px) {
       body {
@@ -86,57 +66,58 @@
 </head>
 <body>
 
-  <h1>要給律師的資料</h1>
+<h1>要給律師的資料（補充項目）</h1>
 
-  <h2>一、個人基本資料</h2>
+<div class="section" id="section-3">
+  <h2 data-number="三、">勞保紀錄查詢</h2>
   <ul>
-    <li>身分證正反面影本</li>
-    <li>戶口名簿影本（或全戶戶籍謄本）</li>
-    <li>戶籍謄本（近三個月內）</li>
-    <li>印章（有的話帶上）</li>
+    <li>至勞保局申請可查詢是否有保。</li>
+    <li><strong>地址：</strong> 台北市中正區忠孝東路一段76號</li>
+    <li><strong>電話：</strong> (02) 2396-1266</li>
+    <li><strong>網站：</strong> <a href="https://www.bli.gov.tw" target="_blank">https://www.bli.gov.tw</a></li>
   </ul>
+</div>
 
-  <h2>二、債務證明</h2>
+<div class="section" id="section-4">
+  <h2 data-number="四、">財產與投資明細</h2>
+  <ul>
+    <li>包含名下資產如：不動產、車輛、股票、基金、虛擬幣等。</li>
+    <li>請列出所有資產清單。</li>
+    <li>銀行與郵局帳戶：請申請近一年內明細。</li>
+    <li>準備兩份：一份自留，一份交給律師。</li>
+    <li>請用筆註明大筆款項來源與用途（例如：30000 元來自親友支援用於醫療費）。</li>
+    <li>律師會詢問：每月收入與每月花費細項，請事先準備清單。</li>
+  </ul>
+</div>
 
-  <div class="section post-office">
-    <h3>🔹 申請方式一：前往郵局儲匯窗口辦理</h3>
+<div class="section" id="section-5">
+  <h2 data-number="五、">保單明細</h2>
+  <ul>
+    <li>若有保單，請申請明細，確認是否有價值增值。</li>
+    <li>可透過下列保險公會查詢：</li>
     <ul>
-      <li>攜帶 <strong>身分證正本</strong> 及 <strong>第二證件</strong>（如健保卡、駕照）</li>
-      <li>告知窗口：<strong>我要申請「金融聯合徵信中心」的信用報告與債權人清冊，是要辦理更生用的</strong></li>
-      <li>填寫申請書，郵局會代收並寄送</li>
-      <li>約 5～7 天收到報告</li>
+      <li><strong>壽險公會：</strong> <a href="https://www.lia-roc.org.tw" target="_blank">https://www.lia-roc.org.tw</a></li>
+      <li><strong>產險公會：</strong> <a href="https://www.tii.org.tw" target="_blank">https://www.tii.org.tw</a></li>
+      <li>或直接向保險公司客服申請保單價值資料。</li>
     </ul>
-  </div>
+  </ul>
+</div>
 
-  <div class="section jcic-address">
-    <h3>🔹 申請方式二：親自前往金融聯合徵信中心辦理</h3>
-    <ul>
-      <li><strong>地點：</strong> 財團法人金融聯合徵信中心（JCIC）</li>
-      <li><strong>地址：</strong> 台北市大安區羅斯福路三段 143 號 6 樓</li>
-      <li><strong>電話：</strong> (02) 2316-3232</li>
-      <li><strong>備註：</strong> 攜帶身分證與第二證件正本，到櫃檯說明需求即可</li>
-    </ul>
-    <div class="dialog-box">
-      <p><strong>你說：</strong>「你好，我要申請信用報告與債權人清冊，是要辦理更生用的。」</p>
-      <p><strong>櫃台小姐：</strong>「好的，請幫我簽一下這邊的申請表。」</p>
-      <p><strong>備註：</strong> 現場辦理大約 10 分鐘左右就可以拿到資料了。</p>
-    </div>
-  </div>
+<div class="section" id="section-6">
+  <h2 data-number="六、">工作狀況說明</h2>
+  <ul>
+    <li>若有工作：請說明目前工作內容與收入。</li>
+    <li>若沒有工作：請說明原因（如身體不適），可提供醫院證明。</li>
+  </ul>
+</div>
 
-  <div class="section documents">
-    <h3>🔹 可準備的其他相關文件（有則提供，沒有也沒關係）</h3>
-    <ul>
-      <li>各家銀行帳單</li>
-      <li>催收通知（例如簡訊、信件）</li>
-      <li>繳款單或銀行協商資料</li>
-      <li>法院判決書（如曾被起訴）</li>
-      <li>存證信函（如收過律師函）</li>
-      <li>強制執行通知（如已扣薪、查封）</li>
-    </ul>
-    <p>✅ 若你沒有以上資料也沒關係，告訴律師即可，由律師協助整理。</p>
-  </div>
-
-  <p class="note">📌 資料越清楚、準備越完整，越能幫助律師為你爭取到最佳的更生方案。</p>
+<div class="section" id="section-7">
+  <h2 data-number="七、">子女扶養費處理</h2>
+  <ul>
+    <li>若有離婚情形，需說明是否收到前夫的扶養費。</li>
+    <li>若有證明（如匯款單），請附上；若無，請與律師討論處理方式。</li>
+  </ul>
+</div>
 
 </body>
 </html>
